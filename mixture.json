@@ -8,7 +8,8 @@
     "scripts",
     "source-data",
     "tmp",
-    "dist"
+    "dist",
+    "node_modules"
   ],
   "optimiseSVG": false,
   "preprocessorLocations": [
@@ -17,11 +18,6 @@
   ],
   "projectDescription": "",
   "projectName": "50states2",
-  "simpleModeFileTypes": [
-    ".js",
-    ".html",
-    ".svg"
-  ],
   "templateDefaultPage": "index",
   "type": "mixture"
 }
