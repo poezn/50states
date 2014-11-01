@@ -43,22 +43,26 @@ var InputView = Marionette.ItemView.extend({
 			}
 		});
 
-		var firstStringTypeIndex, firstNumberTypeIndex;
+		var fieldStateId, fieldMetric;
 
 		// get initial index for number and string
 		_.each(fields, function(field, i) {
-			if (_.isNull(firstStringTypeIndex) && field.type === "string") {
-				firstStringTypeIndex = i;
+			if (!(fieldStateId) && field.type === "stateid") {
+				fieldStateId = field;
 			}
-			if (_.isNull(firstNumberTypeIndex) && field.type === "number") {
-				firstNumberTypeIndex = i;
+			if (!(fieldMetric) && field.type === "number") {
+				fieldMetric = field;
 			}
 		});
+
+		console.log(fieldStateId, fieldMetric)
 
 		this.model.set({
 			data: data,
 			fields: fields,
-			lastUpdated: new Date()
+			lastUpdated: new Date(),
+			fieldStateId: fieldStateId,
+			fieldMetric: fieldMetric
 		});
 	},
 

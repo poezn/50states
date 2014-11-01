@@ -1,2 +1,38 @@
 /* [sass, css, custom.scss] */
+/* line 4, /Users/michael/dev/50states/css/custom.scss */
+.state {
+  stroke-linejoin: round;
+  stroke: #FFFFFF;
+  font-size: 14px; }
 
+/* line 11, /Users/michael/dev/50states/css/custom.scss */
+.q0-4 text {
+  fill: #001966; }
+
+/* line 12, /Users/michael/dev/50states/css/custom.scss */
+.q1-4 text {
+  fill: #001966; }
+
+/* line 13, /Users/michael/dev/50states/css/custom.scss */
+.q2-4 text {
+  fill: #001966; }
+
+/* line 14, /Users/michael/dev/50states/css/custom.scss */
+.q3-4 text {
+  fill: #d8e9f7; }
+
+/* line 17, /Users/michael/dev/50states/css/custom.scss */
+.q0-4 {
+  fill: #eff3ff; }
+
+/* line 18, /Users/michael/dev/50states/css/custom.scss */
+.q1-4 {
+  fill: #bdd7e7; }
+
+/* line 19, /Users/michael/dev/50states/css/custom.scss */
+.q2-4 {
+  fill: #6baed6; }
+
+/* line 20, /Users/michael/dev/50states/css/custom.scss */
+.q3-4 {
+  fill: #2171b5; }
