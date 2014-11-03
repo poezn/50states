@@ -53,3 +53,9 @@
 .q3-4 {
   fill: #2171b5; }
 
+/* line 24, /Users/michael/dev/50states/css/custom.scss */
+#input textarea {
+  font-family: Mono, Courier, monospace;
+  font-size: 10px;
+  height: 400px; }
+

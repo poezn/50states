@@ -19,18 +19,17 @@
     <body>
 
         <div class="container">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
-
             <div class="row">
                 <div class="col-md-3" id="input">
                     {% include "snippets/input" %}
                 </div>
-                <div class="col-md-9" id="map">
-                    {% include "snippets/map" %}
+                <div class="col-md-9">
+                    <div id="nav">
+                        {% include "snippets/nav" %}
+                    </div>
+                    <div id="map">
+                        {% include "snippets/map" %}
+                    </div>
                 </div>
             </div>
         </div>

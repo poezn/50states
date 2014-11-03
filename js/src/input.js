@@ -12,7 +12,7 @@ var InputView = Marionette.ItemView.extend({
 	},
 
 	events: {
-		"keyup": "parseData"
+		"click #btn-go": "parseData"
 	},
 
 	parseData: function() {
@@ -55,8 +55,6 @@ var InputView = Marionette.ItemView.extend({
 			}
 		});
 
-		console.log(fieldStateId, fieldMetric)
-
 		this.model.set({
 			data: data,
 			fields: fields,
@@ -66,4 +64,31 @@ var InputView = Marionette.ItemView.extend({
 		});
 	},
 
+});
+
+var NavigationView = Marionette.ItemView.extend({
+	template: "#tpl-nav",
+
+	events: {
+		"click li": "changeMap"
+	},
+
+	modelEvents: {
+		"change:mapType": "render"
+	},
+
+	changeMap: function(ev) {
+		var el = $(ev.currentTarget);
+		var type = $(el).attr("data-map-type");
+		this.model.set("mapType", type);
+	},
+
+	onRender: function() {
+		var activeLi = this.model.get("mapType");
+
+		d3.select(this.el).selectAll("li")
+		.classed("active", function(d) {
+			return d3.select(this).attr("data-map-type") === activeLi;
+		})
+	}
 });

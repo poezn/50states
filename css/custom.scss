@@ -18,3 +18,12 @@ $font-serifs: Georgia, serif;
 .q1-4 { fill: #bdd7e7; }
 .q2-4 { fill: #6baed6; }
 .q3-4 { fill: #2171b5; }
+
+#input {
+
+	textarea {
+		font-family: Mono, Courier, monospace;
+		font-size: 10px;
+		height: 400px
+	}	
+}
